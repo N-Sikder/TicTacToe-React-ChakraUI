@@ -36,6 +36,8 @@ export default function Game() {
   //To display the winner or the display whose move is next
   if (winner) {
     status = `Winner is ${winner}`;
+  } else if (squares.every((square) => square !== null)) {
+    status = "It's a Draw!";
   } else {
     status = `Next player is: ${isNext ? "X" : "O"}`;
   }
