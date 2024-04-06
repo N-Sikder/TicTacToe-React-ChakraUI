@@ -15,6 +15,8 @@ function Square({ value, onSquareClick }) {
     <Button
       bg="blackAlpha.300"
       size="lg"
+      w="75px"
+      h="75px"
       className="square"
       onClick={onSquareClick}
     >
