@@ -38,6 +38,8 @@ export default function Game() {
     status = `Winner is ${winner}`;
   } else if (squares.every((square) => square !== null)) {
     status = "It's a Draw!";
+  } else if (squares.every((square) => square == null)) {
+    status = "Start Playing";
   } else {
     status = `Next player is: ${isNext ? "X" : "O"}`;
   }
